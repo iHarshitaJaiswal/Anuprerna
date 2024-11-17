@@ -1,0 +1,284 @@
+<section class="bg-anuprerna-200 text-anuprerna-250 font-mulish min-h-s vh m-0 p-0">
+    <section class="max-w-4xl mx-auto p-6 bg-white shadow-2xl rounded-lg mt-6 mb-6">
+      <h3 class="text-xl font-semibold mb-4">Production Progress</h3>
+      <div class="flex items-center space-x-4 mb-8">
+        <div class="flex-grow relative">   
+          <div class="h-1 bg-anuprerna-100 rounded-full"></div>
+          <div class="absolute top-0 left-0 h-1 bg-anuprerna-50 rounded-full" style="width: 50%;"></div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex flex-col items-center">
+            <div class="h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+            <p class="text-sm mt-2">Sourcing</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-8 w-8 bg-anuprerna-20 rounded-full flex items-center justify-center text-anuprerna-250 text-xs">50%</div>
+            <p class="text-sm mt-2">Production</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-8 w-8 bg-anuprerna-200 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">hourglass_top</span></div>
+            <p class="text-sm mt-2">QC</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-8 w-8 bg-anuprerna-200 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">hourglass_top</span></div>
+            <p class="text-sm mt-2">Delivery</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+
+        <div class="border rounded-lg p-4">
+          <div class="flex justify-between items-center">
+            <h4 class="font-semibold mr-4">Sourcing</h4>
+            <div class="flex-grow">
+              <div class="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div class="absolute top-0 left-0 h-full bg-green-500" style="width: 50%;"></div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="flex text-center mb-7">
+          <img src="arrow.svg" alt="arrow" class="h-14 w-14 ml-10">
+          <div class="flex space-x-8">
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS1')">
+                {{ visibleSections.sourcingS1 ? 'Hide' : 'Step 1' }}</button></p>
+              
+               
+            <div *ngIf="visibleSections.sourcingS1" class="mt-4">
+              <div class="grid grid-cols-4 gap-4">
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+              </div>
+              <div class="grid grid-cols-4 gap-4 mt-4">
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+              </div>
+              <p class="text-sm text-left">Lorem ipsum dolor sit amet.</p>
+            </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS2')">
+                {{ visibleSections.sourcingS2 ? 'Hide' : 'Step 2' }}</button></p>
+
+                <div *ngIf="visibleSections.sourcingS2" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. . </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS3')">
+                {{ visibleSections.sourcingS3 ? 'Hide' : 'Step 3' }}</button></p>
+                <div *ngIf="visibleSections.sourcingS3" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos accusantium voluptatibus tenetur quasi quam, voluptates in officia quaerat commodi voluptatem. </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS4')">
+                {{ visibleSections.sourcingS4 ? 'Hide' : 'Step 4' }}</button></p>
+                <div *ngIf="visibleSections.sourcingS4" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos accusantium voluptatibus tenetur quasi quam. </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS5')">
+                {{ visibleSections.sourcingS5 ? 'Hide' : 'Step 5' }}</button></p>
+                <div *ngIf="visibleSections.sourcingS5" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos accusantium voluptatem. </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS6')">
+                {{ visibleSections.sourcingS6 ? 'Hide' : 'Step 6' }}</button></p>
+                <div *ngIf="visibleSections.sourcingS6" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit, amet consectetur. </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('sourcingS7')">
+                {{ visibleSections.sourcingS7 ? 'Hide' : 'Step 7' }}</button></p>
+                <div *ngIf="visibleSections.sourcingS7" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quod? </p>
+                </div>
+            </div>
+          </div>
+          
+       </div>
+  
+        <div class="border rounded-lg p-4">
+          <div class="flex justify-between items-center">
+            <h4 class="font-semibold">Production</h4>
+          </div>
+
+        </div>
+        <div class="flex text-center mb-7">
+          <img src="arrow.svg" alt="arrow" class="h-14 w-14 ml-10">
+          <div class="flex space-x-8">
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('productionS1')">
+                {{ visibleSections.productionS1 ? 'Hide' : 'Step 1' }}</button></p>
+                <div *ngIf="visibleSections.productionS1" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quod? </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('productionS2')">
+                {{ visibleSections.productionS2 ? 'Hide' : 'Step 2' }}</button></p>
+                <div *ngIf="visibleSections.productionS2" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quod? </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-10 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">check</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('productionS3')">
+                {{ visibleSections.productionS3 ? 'Hide' : 'Step 3' }}</button></p>
+                <div *ngIf="visibleSections.productionS3" class="mt-4">
+                  <div class="grid grid-cols-4 gap-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <div class="grid grid-cols-4 gap-4 mt-4">
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                    <a href="link4" target="_blank"><img src="https://placehold.jp/200x150.png" alt="Image 1"></a>
+                  </div>
+                  <p class="text-sm text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quod? </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-20 rounded-full flex items-center justify-center text-anuprerna-250 text-xs">50%</div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('productionS4')">
+                {{ visibleSections.productionS4 ? 'Hide' : 'Step 4' }}</button></p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-200 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">hourglass_top</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('productionS5')">
+                {{ visibleSections.productionS5 ? 'Hide' : 'Step 5' }}</button></p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="mt-8 h-8 w-8 bg-anuprerna-200 rounded-full flex items-center justify-center text-anuprerna-250"><span class="material-icons">hourglass_top</span></div>
+              <p class="text-sm mt-2"><button class="text-blue-500 focus:outline-none" (click)="toggleSection('productionS6')">
+                {{ visibleSections.productionS6 ? 'Hide' : 'Step 6' }}</button></p>
+            </div>
+          </div>
+       </div>
+
+      </div>
+  
+  </section>
+
+  
